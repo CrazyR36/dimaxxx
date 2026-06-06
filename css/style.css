@@ -1838,6 +1838,12 @@ nav { display:flex; justify-content:space-between; align-items:center; }
 @media (max-width:768px) {
   :root { --section-pad:64px; }
 
+  /* Vorher/Nachher */
+  #vorher-nachher > .container > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
   .nav-links { display:none; }
   .hamburger { display:flex; }
 
