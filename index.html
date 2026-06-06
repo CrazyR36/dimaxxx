@@ -81,22 +81,34 @@
      HERO
 =========================== -->
 <section id="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-lines" aria-hidden="true"></div>
+  <!-- Sternenhimmel-Canvas (animierte Partikel) -->
+  <canvas id="hero-canvas" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;"></canvas>
+
+  <!-- Goldenes Glühen -->
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <!-- Ringe (wie im DL-Monogramm des Logos) -->
+  <div class="hero-ring hero-ring-1" aria-hidden="true"></div>
+  <div class="hero-ring hero-ring-2" aria-hidden="true"></div>
+  <div class="hero-ring hero-ring-3" aria-hidden="true"></div>
 
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">Raum Design · Spanndecken & Lichttechnik seit 2009</div>
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Raum Design · Spanndecken &amp; Lichttechnik seit 2009
+      </div>
 
       <h1>
-        Spanndecken,<br>
-        die <span class="gold">begeistern.</span>
+        <span class="hero-word-1">Spanndecken,</span>
+        <span class="hero-word-2">die begeistern.</span>
+        <span class="hero-word-3">DIMAXX RAUM DESIGN</span>
       </h1>
 
       <p>
         Verwandeln Sie jeden Raum in etwas Besonderes – mit maßgefertigten
-        Spanndecken in höchster Qualität. Montage in nur einem Tag,
-        kein Staub, 10 Jahre Garantie.
+        Spanndecken und Lichttechnik in höchster Qualität. Montage in nur
+        einem Tag, kein Staub, 10 Jahre Garantie.
       </p>
 
       <div class="hero-buttons">
@@ -104,14 +116,14 @@
           Kostenlose Beratung
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#gallery" class="btn btn-outline">Galerie ansehen</a>
+        <a href="#gallery" class="btn btn-silver">Galerie ansehen</a>
       </div>
     </div>
   </div>
 
   <div class="hero-scroll" aria-hidden="true">
     <div class="scroll-mouse"></div>
-    <span>Scrollen</span>
+    <span class="scroll-label">Scrollen</span>
   </div>
 </section>
 
@@ -163,6 +175,8 @@
           </div>
           <div class="corner-deco tl" aria-hidden="true"></div>
           <div class="corner-deco br" aria-hidden="true"></div>
+          <div class="corner-deco-s tr" aria-hidden="true"></div>
+          <div class="corner-deco-s bl" aria-hidden="true"></div>
         </div>
         <div class="about-years" aria-label="15 Jahre Erfahrung">
           <span class="num">15</span>
